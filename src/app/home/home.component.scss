@@ -1,13 +1,154 @@
+.travelpic{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.travelpic{
+    position: relative;
+  }
+  
+.pictext{
+    position: absolute;
+    bottom: 140px;
+    right: 440px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family:'Candara';
+  }
+.pictext2{
+    position: absolute;
+    bottom: 80px;
+    right: 280px;
+    color:  rgba(22, 17, 4, 0.993);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 7px;
+}
+
 .title{ 
     font-size:25px;
-    background-color: rgba(175, 45, 73, 0.993);
+    background-color: rgba(247, 230, 185, 0.993);
     display: flex;
     justify-content: center;
 
 } 
 .subtitle{
-    padding:20px;
+    padding:10px;
+    font-family: 'Noteworthy bold';
 }
-.hero-body{
-    border:3px solid rgb(168, 107, 107);
+.herobody{
+    //border:3px solid #0a0a0ab2;
+}
+
+
+
+
+
+
+.timestamp{
+    font-size: 15px;
+    color: rgba(63, 63, 57, 0.555);
+    padding-left: 5px;
+}
+
+.test{
+    padding-left:40px
+}
+
+.skyline{
+    display: flex;
+    justify-content: center;
+}
+
+.blogheader{
+    font-size: 22px;
+    color: rgb(236, 181, 110);
+    //color: #be463ee0;
+    display: flex;
+    justify-content: center;
+}
+
+.blogtext{
+    padding:10px;
+    font-family: 'sans-serif';
+}
+.blogbody{
+    //border:3px solid #0a0a0ab2;
+}
+
+.main2{
+   border-block-end:3px solid #000000b2;
+   border-block-start: 3px solid #000000b2;
+   //border-block-end:3px solid rgba(247, 230, 185, 0.993);
+   //border-block-start:3px solid rgba(247, 230, 185, 0.993);
+}
+
+.main{
+   border-block-end:3px solid #000000b2;
+   //border-block-end:3px solid rgba(247, 230, 185, 0.993);
+}
+
+.space{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+label {
+    display: block;
+    
+    input, textarea {
+        display: block;
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 1em;
+    }
+
+    .error {
+        margin-top: -20px;
+        background: yellow;
+        padding: .5em;
+        display: inline-block;
+        font-size: .9em;
+        margin-bottom: 20px;
+    }
+}
+
+.cta {
+    background: #7700FF;
+    border: none;
+    color: white;
+
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1em;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+
+.results {
+    margin-top: 50px;
+
+    strong {
+        display: block;
+    }
+    span {
+        margin-bottom: 20px;
+        display: block;
+    }
 }
