@@ -13,10 +13,20 @@
 .subtitle{
     padding:22px;
 }
+.link{
+    padding:22px;
+    margin:0px;
+    margin-top: -35px;
+    margin-bottom: -10px
+}
 .hero-body{
     border:5px solid rgb(247, 230, 185, 0.993);
 }
 .pic{
     display: flex;
     justify-content: center;
+}
+.space{
+    color:white;
+    font-size: 50px;
 }
