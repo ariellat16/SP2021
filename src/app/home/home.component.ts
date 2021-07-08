@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-home',
@@ -7,30 +7,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  
 
-  messageForm: FormGroup;
-  submitted = false;
-  success = false;
+  constructor() { }
 
-  constructor(private formBuilder: FormBuilder) { }
+  ngOnInit(): void{
 
-  ngOnInit() {
-    this.messageForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      message: ['', Validators.required]
-    });
   }
-
-  onSubmit() {
-    this.submitted = true;
-
-    if (this.messageForm.invalid) {
-        return;
-    }
-
-    this.success = true;
+    
 }
-
-}
-
 
