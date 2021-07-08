@@ -1,14 +1,144 @@
-<p></p>
- <section class="hero is-primary is-bold 
- has-text-centered">
-     <div class="hero-body">
+<div class="travelpic">
+  <br>
+  <img src="http://www.diegomallien.com/wp-content/uploads/2017/03/Meaning-of-travelling.jpg?x38602" width="1390" height="400" alt= "some_text" style="opacity:0.6;filter: alpha(opacity=40);">
+  <div class= "pictext">
+    <h4>
+      Welcome!
+    </h4>
+  </div>
+  <div class= "pictext2">
+    <p>
+      Work. Art. Food. Travel. Growth
+    </p>
+  </div>
+
+
+</div>
+<div class= "space">
+  MICHELLES BLOG
+</div>
+<div class= "space">
+  MICHELLES BLOG
+</div>
+<div class= "space">
+  MICHELLES BLOG
+</div>
+
+
+     <div class="herobody">
        <h1 class="title">
          ABOUT ME
        </h1>
        <p class="subtitle">
          Hello! My name is Michelle and I have traveled all around the United States for my job at CITIGroup. Recently, my job has given me the opportunity to travel to Dallas, Texas and Jacksonville, Florida in order to meet new clients. During my time in these cities I will be exploring local hotspots and ranking them by their popularity. I hope that this blog is able to help tourists, and locals, have a good time when visiting these cities.
-
        </p>
      </div>
-   </section>
 
+
+    <div class= "space">
+      MICHELLES BLOG
+    </div>
+    <div class= "space">
+      MICHELLES BLOG
+    </div>
+    <div class= "space">
+      MICHELLES BLOG
+    </div>
+    <div class= "space">
+      MICHELLES BLOG
+    </div>
+    <div class= "space">
+      MICHELLES BLOG
+    </div>
+    <div class= "space">
+      MICHELLES BLOG
+    </div>
+    <div class= "space">
+      MICHELLES BLOG
+    </div>
+
+
+
+     <section class="main2">
+      <div class="blogbody">
+        <p  class="timestamp">
+          July 16th, 2021
+          <span class= "test"> 5 comments </span>
+            <span class= "test"> 83 likes </span>   
+        </p>
+        <p class="skyline">
+           <br>
+           <img src="https://resources.esportsinsider.com/esportsinsider/2017/11/37689930_l.jpg" width="700" height="350">
+         </p>
+        <h1 class="blogheader">
+          Jacksonville, Florida: A Place of Rich Culture and Sunny Beaches
+        </h1>
+        <p class="blogtext">
+          This week I traveled to Jacksonville, Florida and I can't wait to share my trip with you guys. The city definitely lives up to its name! From its picteresque landscapes, diverse cuisines, and large community, Jacksonville is not a place to miss. 
+          I am so excited to share some of the places I visited during my time there, and I hope you get the chance to enjoy all the beautiful parts of this city :)
+ 
+        </p>
+      </div>
+    </section>
+
+
+     <section class="main">
+         <div class="blogbody">
+          <p class="timestamp">
+            June 7th, 2021
+            <span class= "test"> 12 comments </span>
+            <span class= "test"> 148 likes </span>
+          </p>
+           <p class="skyline">
+              <br>
+              <img src="https://mosscm.com/wp-content/uploads/2017/11/news-dallas-skyline.jpg" width="700" height= "350">
+            </p>
+           <h1 class="blogheader">
+             Dallas, Texas: A Sociocultural Hub
+           </h1>
+           <p class="blogtext">
+             To kick of my summer travels I spent a few weeks in Dallas, Texas and got to learn so much about the community! This city is the perfect mix of a cosmpolitian hub and suburban town. From outdoor activities to the huge architectural landscapes in downtown Dallas, this city has it all. Go check out the new Dallas page where I show you all the amazing places I went.
+    
+           </p>
+         </div>
+       </section>
+    
+
+
+
+
+
+
+       <h1>Contact us</h1>
+
+       <form [formGroup]="message" (ngSubmit)="onSubmit()">
+       
+           <h5 *ngIf="success">Your form is valid!</h5>
+       
+           <label>
+             Name:
+             <input type="text" formControlName="name">
+             <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+               <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
+             </div>
+           </label>
+         
+           <label>
+             Message:
+             <textarea formControlName="message"></textarea>
+             <div *ngIf="submitted && message.controls.message.errors" class="error">
+               <div *ngIf="message.controls.message.errors.required">A message is required</div>
+             </div>
+           </label>
+       
+           <input type="submit" value="Send message" class="cta">
+         
+         </form>
+       
+         <div *ngIf="submitted" class="results">
+           <strong>Name:</strong> 
+           <span>{{ message.controls.name.value }}</span>
+       
+           <strong>Message:</strong> 
+           <span>{{ message.controls.message.value }}</span>
+         </div>
