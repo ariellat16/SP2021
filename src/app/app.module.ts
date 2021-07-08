@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { JacksonvilleComponent } from './jacksonville/jacksonville.component';
 import { DallasComponent } from './dallas/dallas.component';
 import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule
+    HttpClientModule,
+    ReactiveFormsModule  // <- Add here
+  ],
   ],
   providers: [],
   bootstrap: [AppComponent]
